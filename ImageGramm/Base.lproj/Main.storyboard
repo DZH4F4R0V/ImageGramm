@@ -68,9 +68,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="YP Black (iOS)"/>
                                         <connections>
-                                            <outlet property="cellAuthorLabel" destination="05N-Q0-MWe" id="qaf-BK-eB6"/>
                                             <outlet property="cellButton" destination="Nvb-1X-5SD" id="Wko-Rz-ZBt"/>
-                                            <outlet property="cellImageView" destination="ko4-78-L9R" id="2zK-af-B4T"/>
+                                            <outlet property="cellDateLabel" destination="05N-Q0-MWe" id="JvA-2x-0to"/>
+                                            <outlet property="cellImage" destination="ko4-78-L9R" id="hDE-fJ-9Cf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
