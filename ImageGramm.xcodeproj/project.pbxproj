@@ -6,31 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		281287ED2F86681000B1D900 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 281287CE2F86681000B1D900 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 281287D52F86681000B1D900;
-			remoteInfo = ImageGramm;
-		};
-		281287F72F86681000B1D900 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 281287CE2F86681000B1D900 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 281287D52F86681000B1D900;
-			remoteInfo = ImageGramm;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		281287D62F86681000B1D900 /* ImageGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		281287EC2F86681000B1D900 /* ImageGrammTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGrammTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		281287F62F86681000B1D900 /* ImageGrammUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGrammUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		281287FE2F86681000B1D900 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */ = {
+		2853D4B32F93FA63004C5346 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,39 +24,15 @@
 		281287D82F86681000B1D900 /* ImageGramm */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				281287FE2F86681000B1D900 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */,
+				2853D4B32F93FA63004C5346 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */,
 			);
 			path = ImageGramm;
-			sourceTree = "<group>";
-		};
-		281287EF2F86681000B1D900 /* ImageGrammTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageGrammTests;
-			sourceTree = "<group>";
-		};
-		281287F92F86681000B1D900 /* ImageGrammUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageGrammUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		281287D32F86681000B1D900 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		281287E92F86681000B1D900 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		281287F32F86681000B1D900 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				281287D82F86681000B1D900 /* ImageGramm */,
-				281287EF2F86681000B1D900 /* ImageGrammTests */,
-				281287F92F86681000B1D900 /* ImageGrammUITests */,
 				281287D72F86681000B1D900 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				281287D62F86681000B1D900 /* ImageGramm.app */,
-				281287EC2F86681000B1D900 /* ImageGrammTests.xctest */,
-				281287F62F86681000B1D900 /* ImageGrammUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,52 +83,6 @@
 			productReference = 281287D62F86681000B1D900 /* ImageGramm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		281287EB2F86681000B1D900 /* ImageGrammTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 281288042F86681000B1D900 /* Build configuration list for PBXNativeTarget "ImageGrammTests" */;
-			buildPhases = (
-				281287E82F86681000B1D900 /* Sources */,
-				281287E92F86681000B1D900 /* Frameworks */,
-				281287EA2F86681000B1D900 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				281287EE2F86681000B1D900 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				281287EF2F86681000B1D900 /* ImageGrammTests */,
-			);
-			name = ImageGrammTests;
-			packageProductDependencies = (
-			);
-			productName = ImageGrammTests;
-			productReference = 281287EC2F86681000B1D900 /* ImageGrammTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		281287F52F86681000B1D900 /* ImageGrammUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 281288072F86681000B1D900 /* Build configuration list for PBXNativeTarget "ImageGrammUITests" */;
-			buildPhases = (
-				281287F22F86681000B1D900 /* Sources */,
-				281287F32F86681000B1D900 /* Frameworks */,
-				281287F42F86681000B1D900 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				281287F82F86681000B1D900 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				281287F92F86681000B1D900 /* ImageGrammUITests */,
-			);
-			name = ImageGrammUITests;
-			packageProductDependencies = (
-			);
-			productName = ImageGrammUITests;
-			productReference = 281287F62F86681000B1D900 /* ImageGrammUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,14 +95,6 @@
 				TargetAttributes = {
 					281287D52F86681000B1D900 = {
 						CreatedOnToolsVersion = 26.3;
-					};
-					281287EB2F86681000B1D900 = {
-						CreatedOnToolsVersion = 26.3;
-						TestTargetID = 281287D52F86681000B1D900;
-					};
-					281287F52F86681000B1D900 = {
-						CreatedOnToolsVersion = 26.3;
-						TestTargetID = 281287D52F86681000B1D900;
 					};
 				};
 			};
@@ -214,28 +113,12 @@
 			projectRoot = "";
 			targets = (
 				281287D52F86681000B1D900 /* ImageGramm */,
-				281287EB2F86681000B1D900 /* ImageGrammTests */,
-				281287F52F86681000B1D900 /* ImageGrammUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		281287D42F86681000B1D900 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		281287EA2F86681000B1D900 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		281287F42F86681000B1D900 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		281287E82F86681000B1D900 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		281287F22F86681000B1D900 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		281287EE2F86681000B1D900 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 281287D52F86681000B1D900 /* ImageGramm */;
-			targetProxy = 281287ED2F86681000B1D900 /* PBXContainerItemProxy */;
-		};
-		281287F82F86681000B1D900 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 281287D52F86681000B1D900 /* ImageGramm */;
-			targetProxy = 281287F72F86681000B1D900 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		281288002F86681000B1D900 /* Debug */ = {
@@ -473,90 +329,6 @@
 			};
 			name = Release;
 		};
-		281288052F86681000B1D900 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5YWKHX2833;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dzhafarov.ImageGrammTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageGramm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageGramm";
-			};
-			name = Debug;
-		};
-		281288062F86681000B1D900 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5YWKHX2833;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dzhafarov.ImageGrammTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageGramm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageGramm";
-			};
-			name = Release;
-		};
-		281288082F86681000B1D900 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5YWKHX2833;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dzhafarov.ImageGrammUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ImageGramm;
-			};
-			name = Debug;
-		};
-		281288092F86681000B1D900 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5YWKHX2833;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dzhafarov.ImageGrammUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ImageGramm;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,24 +346,6 @@
 			buildConfigurations = (
 				281288002F86681000B1D900 /* Debug */,
 				281288012F86681000B1D900 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		281288042F86681000B1D900 /* Build configuration list for PBXNativeTarget "ImageGrammTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				281288052F86681000B1D900 /* Debug */,
-				281288062F86681000B1D900 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		281288072F86681000B1D900 /* Build configuration list for PBXNativeTarget "ImageGrammUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				281288082F86681000B1D900 /* Debug */,
-				281288092F86681000B1D900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
