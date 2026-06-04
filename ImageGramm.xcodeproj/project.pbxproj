@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		281287D62F86681000B1D900 /* ImageGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AF4B872FD204E0009CD4B4 /* ImageGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageGramm.app; path = "/Users/j_eff/projects/ImageGramm/build/Debug-iphoneos/ImageGramm.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2853D4B32F93FA63004C5346 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */ = {
+		28AF4BB52FD207B5009CD4B4 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		281287D82F86681000B1D900 /* ImageGramm */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2853D4B32F93FA63004C5346 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */,
+				28AF4BB52FD207B5009CD4B4 /* Exceptions for "ImageGramm" folder in "ImageGramm" target */,
 			);
 			path = ImageGramm;
 			sourceTree = "<group>";
@@ -46,16 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				281287D82F86681000B1D900 /* ImageGramm */,
-				281287D72F86681000B1D900 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		281287D72F86681000B1D900 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				281287D62F86681000B1D900 /* ImageGramm.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,7 +71,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageGramm;
-			productReference = 281287D62F86681000B1D900 /* ImageGramm.app */;
+			productReference = 28AF4B872FD204E0009CD4B4 /* ImageGramm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +99,7 @@
 			mainGroup = 281287CD2F86681000B1D900;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 281287D72F86681000B1D900 /* Products */;
+			productRefGroup = 281287CD2F86681000B1D900;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -153,7 +144,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,7 +179,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
