@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		28AF4B872FD204E0009CD4B4 /* ImageGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageGramm.app; path = "/Users/j_eff/projects/ImageGramm/build/Debug-iphoneos/ImageGramm.app"; sourceTree = "<absolute>"; };
+		28AF4BBA2FD22791009CD4B4 /* ImageGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				281287D82F86681000B1D900 /* ImageGramm */,
+				28AF4BBA2FD22791009CD4B4 /* ImageGramm.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageGramm;
-			productReference = 28AF4B872FD204E0009CD4B4 /* ImageGramm.app */;
+			productReference = 28AF4BBA2FD22791009CD4B4 /* ImageGramm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

@@ -12,7 +12,7 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let avatarImage = UIImage(named: "photo")
+        let avatarImage = UIImage(resource: .exit)
         let avatarView = UIImageView()
         avatarView.image = avatarImage
         avatarView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,9 +22,7 @@ final class ProfileViewController: UIViewController {
         avatarView.topAnchor.constraint(equalTo: view.topAnchor, constant: 52).isActive = true
         avatarView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         
-        guard let buttonImage = UIImage(named: "exit") else {
-            fatalError("buttonIcon not found")
-        }
+        let buttonImage = UIImage(resource: .photo)
         let logoutButton = UIButton.systemButton(
             with: buttonImage,
             target: self,
