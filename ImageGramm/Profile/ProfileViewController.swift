@@ -17,11 +17,7 @@ final class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
-        
-        let avatarImage = UIImage(resource: .exit)
-        let avatarView = UIImageView()
-=======
+
         setupUI()
         setupConstraints()
         configureAppearance()
@@ -30,7 +26,6 @@ final class ProfileViewController: UIViewController {
     private func setupUI() {
         let avatarImage = UIImage(resource: .photo)
         avatarView = UIImageView()
->>>>>>> sprint_09
         avatarView.image = avatarImage
         avatarView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(avatarView)
@@ -67,18 +62,6 @@ final class ProfileViewController: UIViewController {
         avatarView.topAnchor.constraint(equalTo: view.topAnchor, constant: 52).isActive = true
         avatarView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         
-<<<<<<< HEAD
-        let buttonImage = UIImage(resource: .photo)
-        let logoutButton = UIButton.systemButton(
-            with: buttonImage,
-            target: self,
-            action: #selector(Self.didTapLogoutButton)
-        )
-        logoutButton.tintColor = UIColor(named: "YP Red (iOS)")
-        logoutButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(logoutButton)
-=======
->>>>>>> sprint_09
         logoutButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
         logoutButton.widthAnchor.constraint(equalTo: logoutButton.heightAnchor).isActive = true
         logoutButton.centerYAnchor.constraint(equalTo: avatarView.centerYAnchor).isActive = true

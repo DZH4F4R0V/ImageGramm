@@ -132,18 +132,6 @@
                                     <outlet property="delegate" destination="1y9-c5-Cgp" id="hwT-CH-9MX"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvK-CW-npp">
-                                <rect key="frame" x="8" y="67" width="48" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="S5p-mK-2kL"/>
-                                    <constraint firstAttribute="height" constant="48" id="Zbt-P9-vuU"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="backward"/>
-                                <connections>
-                                    <action selector="didTapBackButton" destination="1y9-c5-Cgp" eventType="touchUpInside" id="Pgc-c9-A1f"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZQ-Z5-h9g">
                                 <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
                                 <constraints>
@@ -160,14 +148,12 @@
                         <viewLayoutGuide key="safeArea" id="KNQ-C3-Qft"/>
                         <color key="backgroundColor" name="YP Black (iOS)"/>
                         <constraints>
-                            <constraint firstItem="AvK-CW-npp" firstAttribute="top" secondItem="KNQ-C3-Qft" secondAttribute="top" constant="8" id="LUO-uh-gp3"/>
                             <constraint firstItem="bSJ-lq-BRm" firstAttribute="leading" secondItem="KNQ-C3-Qft" secondAttribute="leading" id="VO6-GG-zOL"/>
                             <constraint firstItem="bSJ-lq-BRm" firstAttribute="top" secondItem="7mk-pa-vO3" secondAttribute="top" id="a3J-3T-23y"/>
                             <constraint firstAttribute="bottom" secondItem="bSJ-lq-BRm" secondAttribute="bottom" id="bOI-uf-9EW"/>
                             <constraint firstItem="KNQ-C3-Qft" firstAttribute="trailing" secondItem="bSJ-lq-BRm" secondAttribute="trailing" id="cLZ-Iz-EF6"/>
                             <constraint firstItem="KNQ-C3-Qft" firstAttribute="bottom" secondItem="AZQ-Z5-h9g" secondAttribute="bottom" constant="30" id="faz-Bg-szb"/>
                             <constraint firstItem="AZQ-Z5-h9g" firstAttribute="centerX" secondItem="7mk-pa-vO3" secondAttribute="centerX" id="hc8-wZ-y6N"/>
-                            <constraint firstItem="AvK-CW-npp" firstAttribute="leading" secondItem="KNQ-C3-Qft" secondAttribute="leading" constant="8" id="viK-bs-Fpb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fa2-DK-l7Y"/>
@@ -221,7 +207,6 @@
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
-        <image name="backward" width="24" height="24"/>
         <image name="liked" width="44" height="44"/>
         <image name="sharing" width="50" height="50"/>
         <image name="tab_editorial_active" width="30" height="30"/>
