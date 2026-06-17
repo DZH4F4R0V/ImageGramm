@@ -18,10 +18,17 @@ final class SingleImageViewController: UIViewController {
         }
     }
     
-    private var savedContentOffset: CGPoint?
-    
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var scrollView: UIScrollView!
+    
+    private lazy var backButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(resource: .backward), for: .normal)
+        button.tintColor = UIColor(resource: .ypWhiteIOS)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +39,9 @@ final class SingleImageViewController: UIViewController {
         imageView.image = image
         imageView.frame.size = image.size
         rescaleAndCenterImageInScrollView(image: image)
+        
+        view.addSubview(backButton)
+        setupBackButtonConstraints()
     }
     
     @IBAction private func didTapBackButton() {
@@ -58,12 +68,21 @@ final class SingleImageViewController: UIViewController {
         let scale = min(maxZoomScale, max(minZoomScale, min(hScale, vScale)))
         scrollView.setZoomScale(scale, animated: false)
         scrollView.layoutIfNeeded()
-        let newContentSize = scrollView.contentSize
-        let x = (newContentSize.width - visibleRectSize.width) / 2
-        let y = (newContentSize.height - visibleRectSize.height) / 2
-        scrollView.setContentOffset(CGPoint(x: x, y: y), animated: false)
+        
+        let widthInset = max((scrollView.bounds.width - imageView.frame.width) / 2, 0)
+        let heightInset = max((scrollView.bounds.height - imageView.frame.height) / 2, 0)
+        scrollView.contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: heightInset, right: widthInset)
+        scrollView.contentOffset = CGPoint(x: -widthInset, y: -heightInset)
     }
     
+    private func setupBackButtonConstraints() {
+        NSLayoutConstraint.activate([
+            backButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
+            backButton.widthAnchor.constraint(equalToConstant: 48),
+            backButton.heightAnchor.constraint(equalToConstant: 48)
+        ])
+    }
     
 }
 
@@ -72,27 +91,10 @@ extension SingleImageViewController: UIScrollViewDelegate {
         imageView
     }
     
-    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
-        savedContentOffset = scrollView.contentOffset
-    }
-    
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        print("Final scale: \(scale)")
-        if scale > 1 {
-            scrollView.layoutIfNeeded()
-            scrollView.contentInset = .zero
-            guard let savedContentOffset else {return}
-            scrollView.contentOffset = savedContentOffset
-        } else {
-            scrollView.layoutIfNeeded()
-            let widthInset = max((scrollView.bounds.size.width - imageView.frame.width) / 2, 0)
-            let heightInset = max((scrollView.bounds.size.height - imageView.frame.height) / 2, 0)
-            scrollView.contentInset = UIEdgeInsets(
-                top: heightInset,
-                left: widthInset,
-                bottom: heightInset,
-                right: widthInset
-            )
-        }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        let widthInset = max((scrollView.bounds.width - imageView.frame.width) / 2, 0)
+        let heightInset = max((scrollView.bounds.height - imageView.frame.height) / 2, 0)
+        scrollView.contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: heightInset, right: widthInset)
     }
 }
+
