@@ -21,6 +21,15 @@ final class SingleImageViewController: UIViewController {
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var scrollView: UIScrollView!
     
+    private lazy var backButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(resource: .backward), for: .normal)
+        button.tintColor = UIColor(resource: .ypWhiteIOS)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.minimumZoomScale = 0.1
@@ -30,6 +39,9 @@ final class SingleImageViewController: UIViewController {
         imageView.image = image
         imageView.frame.size = image.size
         rescaleAndCenterImageInScrollView(image: image)
+        
+        view.addSubview(backButton)
+        setupBackButtonConstraints()
     }
     
     @IBAction private func didTapBackButton() {
@@ -61,6 +73,15 @@ final class SingleImageViewController: UIViewController {
         let heightInset = max((scrollView.bounds.height - imageView.frame.height) / 2, 0)
         scrollView.contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: heightInset, right: widthInset)
         scrollView.contentOffset = CGPoint(x: -widthInset, y: -heightInset)
+    }
+    
+    private func setupBackButtonConstraints() {
+        NSLayoutConstraint.activate([
+            backButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
+            backButton.widthAnchor.constraint(equalToConstant: 48),
+            backButton.heightAnchor.constraint(equalToConstant: 48)
+        ])
     }
     
 }
