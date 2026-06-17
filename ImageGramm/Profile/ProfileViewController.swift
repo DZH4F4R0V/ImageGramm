@@ -23,16 +23,13 @@ final class ProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        let avatarImage = UIImage(named: "photo")
+        let avatarImage = UIImage(resource: .photo)
         avatarView = UIImageView()
         avatarView.image = avatarImage
         avatarView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(avatarView)
         
-        guard let buttonImage = UIImage(named: "exit") else {
-            print("Button image not found!")
-            return
-        }
+        let buttonImage = UIImage(resource: .exit)
         logoutButton = UIButton.systemButton(
             with: buttonImage,
             target: self,
